@@ -48,7 +48,7 @@ export default {
       meta: [
         {
           name: 'description',
-          content: `${this.appTitle} home page`,
+          content: `${this.appTitle} developers page`,
           id: 'desc',
         },
       ],
