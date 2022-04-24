@@ -1,17 +1,21 @@
 <template>
-  <header class="navbar" :class="{ offline: !networkOnLine }">
+  <header class="navbar navbar-dark bg-black" :class="{ offline: !networkOnLine }">
     <router-link to="/home">
-      <img alt="logo-bento" class="logo" src="@/assets/img/bento-starter.svg" />
-      <span class="site-name title-desktop">{{ appTitle }}</span>
-      <span class="site-name title-mobile">{{ appShortTitle }}</span>
+      <img alt="logo-ergonames" class="logo" src="@/assets/Logo-V4-Dark-H.jpeg" />
     </router-link>
     <div class="links">
-      <nav class="nav-links">
+      <nav class="nav-links button">
         <div class="nav-item">
-          <router-link to="/mint">Mint ergo-names NFT</router-link>
+          <router-link to="/home">for ergonauts</router-link>
         </div>
         <div class="nav-item">
-          <router-link to="/send">Send to NFT owner</router-link>
+          <router-link to="/developers">for developers</router-link>
+        </div>
+        <div class="nav-item">
+          <router-link to="/partners">for partners</router-link>
+        </div>
+        <div class="nav-item">
+          <button type="button" class="btn btn-secondary" disabled>Launch App</button>
         </div>
         <div v-if="!networkOnLine" class="nav-item offline-label">Offline</div>
       </nav>
@@ -84,7 +88,7 @@ export default {
   }
 
   .logo {
-    height: 24px;
+    height: 50px;
     padding-right: 8px;
   }
 
@@ -95,7 +99,7 @@ export default {
     font-size: 0.9rem;
     position: absolute;
     right: 1.5rem;
-    top: 0.7rem;
+    top: 1.2rem;
     display: flex;
 
     .nav-links {
@@ -115,7 +119,7 @@ export default {
 
         a {
           font-weight: 500;
-          font-size: 0.9rem;
+          font-size: 1.1rem;
           text-decoration: none;
           color: $navbar-link-color;
           border-color: #2c3e50;
@@ -131,6 +135,7 @@ export default {
 
         .router-link-active {
           @include activatedLink;
+          font-weight: bolder;
         }
 
         @media (hover) {

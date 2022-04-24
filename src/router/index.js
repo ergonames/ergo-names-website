@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Head from 'vue-head'
-import Home from '@/views/Home'
-import MintNFT from '@/views/MintNFT'
-import SendNFT from '@/views/SendNFT'
+import Home from '@/views/Home.vue'
+import Partners from '@/views/Partners.vue'
+import Developers from '@/views/Developers.vue'
 
 Vue.use(Router)
 
@@ -20,17 +20,17 @@ const router = new Router({
   base: process.env.BASE_URL,
   routes: [
     {
-      path: '/mint',
-      name: 'mint',
-      component: MintNFT,
+      path: '/developers',
+      name: 'developers',
+      component: Developers,
       meta: {
         authNotRequired: true,
       },
     },
     {
-      path: '/send',
-      name: 'send',
-      component: SendNFT,
+      path: '/partners',
+      name: 'partners',
+      component: Partners,
       meta: {
         authNotRequired: true,
       },
