@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Head from 'vue-head'
 import Home from '@/views/Home.vue'
+import Waitlist from '@/views/Waitlist.vue'
 import Partners from '@/views/Partners.vue'
 import Developers from '@/views/Developers.vue'
 
@@ -23,6 +24,14 @@ const router = new Router({
       path: '/developers',
       name: 'developers',
       component: Developers,
+      meta: {
+        authNotRequired: true,
+      },
+    },
+    {
+      path: '/waitlist',
+      name: 'waitlist',
+      component: Waitlist,
       meta: {
         authNotRequired: true,
       },

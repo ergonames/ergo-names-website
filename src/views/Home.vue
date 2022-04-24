@@ -7,7 +7,7 @@
 
 
     <div class="alert alert-primary" role="alert">
-      <a class="btn btn-outline-primary" href="https://ergoplatform.org/en/blog/2022-03-01-ergohack-iii-results/" role="button">
+      <a class="btn btn-outline-primary" href="https://youtu.be/ipSpMgB-Udk" role="button">
       Ergo Names aka ErgoDNS is an award winning solution incubated in ErgoHack III  </a>
     </div>
 
@@ -212,6 +212,21 @@
         </div>
       </div>      
     </div>
+
+    <h3 class="home-page-title spacer-large">Follow Us</h3> 
+    <div class="h1 icons">
+      
+      <a href="https://twitter.com/ergonames" title="Twitter">
+        <b-icon-twitter></b-icon-twitter>
+      </a>
+      <a href="https://www.youtube.com/channel/UC8981bAV8t-YzxcwxZo3wrw" title="YouTube">
+        <b-icon-youtube></b-icon-youtube>
+      </a>
+      <a href="https://discord.gg/Jw6T3PQ6" title="Discord">
+        <b-icon-discord></b-icon-discord>
+      </a>
+    </div>
+
   </div>
 
 
@@ -267,6 +282,13 @@ export default {
 
   .callout-verb {
     color: #0d5efd;
+  }
+
+  .icons {
+    color: black;
+    a {
+      margin: 10px;
+    }
   }
 
   .documentation-link {

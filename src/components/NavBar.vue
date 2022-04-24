@@ -15,7 +15,7 @@
           <router-link to="/partners">for partners</router-link>
         </div>
         <div class="nav-item">
-          <button type="button" class="btn btn-secondary" disabled>Launch App</button>
+          <router-link type="button" class="btn btn-danger" to="/waitlist">Join Waitlist</router-link>
         </div>
         <div v-if="!networkOnLine" class="nav-item offline-label">Offline</div>
       </nav>
