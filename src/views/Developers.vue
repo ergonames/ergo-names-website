@@ -1,46 +1,37 @@
 <template>
   <div class="page-wrapper">
-    <h1 class="home-page-title">{{ appTitle }}</h1>
-    <h3>Mint your ergo-names NFT</h3>
-
+    <h2 class="spacer-large">Resources for Developers for Integration with Ergo Names</h2>
+    <div class="row spacer-large">
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Documentation</h5>
+            <p class="card-text">Ergo Names team has curated a detailed repository to kickstart the integration journey for dApp developers.</p>
+            <a href="#" class="btn btn-primary">Link</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">GitHub</h5>
+            <p class="card-text">Ergo Names team has opensourced the codebase which powers Ergo Names project.</p>
+            <a href="https://github.com/ergonames" class="btn btn-primary">Link</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Discord</h5>
+            <p class="card-text">Ergo Names team is available on discord to answer any open question or query from the community.</p>
+            <a href="https://discord.gg/Jw6T3PQ6" class="btn btn-primary">Link</a>
+          </div>
+        </div>
+      </div>
+    </div>
     <br />
     <div>
-      <b-form @submit="checkAvailability" @reset="onReset">
-        <b-form-input
-          id="input-1"
-          v-model="form.ergoName"
-          placeholder="Enter ErgoName ID to check availability"
-          required
-        ></b-form-input>
-        <br />
-        <b-button type="submit" variant="primary">Check availability</b-button>
-      </b-form>
-      <p v-if="ergoNameAvailable">
-          {{form.ergoName}} ErgoName ID is available. 
-          You can claim it by spending 1 Erg.
-      </p>
-      <p v-if="ergoNameUnavailable">
-          Sorry, {{form.ergoName}} ErgoName ID is not available. 
-          Try searching for something else.
-      </p>
-
-      <!-- <b&#45;card class="mt&#45;3" header="Form Data Result"> -->
-      <!--   <pre class="m&#45;0">{{ form }}</pre> -->
-      <!-- </b&#45;card> -->
-      <br />
-
-      <b-form v-if="ergoNameAvailable" @submit="mintNFT" @reset="onReset">
-        <b-button type="submit" variant="primary">Mint ErgoName NFT</b-button>
-      </b-form>
-      <p v-if="ergoMintingSuccessful">
-          Minting of ErgoName {{form.ergoName}} is successful. <br />
-          You will receive the NFT in your wallet in next block. <br />
-          <a href="/mint">NFT Transaction Link</a>
-      </p>
-      <p v-if="ergoMintingFailure">
-          Oh no, minting of ErgoName {{form.ergoName}} was unsuccessful. <br />
-          Please try again later.
-      </p>
     </div>
   </div>
 </template>
@@ -52,7 +43,7 @@ export default {
   head() {
     return {
       title: {
-        inner: 'Mint ergo-names NFT',
+        inner: 'For Developers',
       },
       meta: [
         {
@@ -63,53 +54,7 @@ export default {
       ],
     }
   },
-  data() {
-    return {
-      form: {
-        ergoName: '',
-      },
-      ergoNameAvailable: false,
-      ergoNameUnavailable: false,
-      ergoMintingSuccessful: false,
-      ergoMintingFailure: false,
-    }
-  },
   computed: mapState('app', ['appTitle']),
-  methods: {
-    checkAvailability(event) {
-      event.preventDefault()
-      // eslint-disable-next-line
-      alert(JSON.stringify(this.form))
-      // AJAX Call
-      this.ergoNameAvailable = true
-      this.ergoNameUnavailable = false
-    },
-    mintNFT(event) {
-      event.preventDefault()
-      // eslint-disable-next-line
-      alert(JSON.stringify(this.form))
-      // AJAX Call
-      this.ergoMintingSuccessful = true
-      this.ergoMintingFailure = false
-    },
-    onReset(event) {
-      event.preventDefault()
-      // Reset our form values
-      this.form.ergoName = ''
-      // Trick to reset/clear native browser form validation state
-      this.ergoNameAvailable = false
-      this.ergoNameUnavailable = false
-      this.ergoMintingSuccessful = false
-      this.ergoMintingFailure = false
-      // TODO: fixme
-      this.$nextTick(() => {
-        this.ergoNameAvailable = false
-        this.ergoNameUnavailable = false
-        this.ergoMintingSuccessful = false
-        this.ergoMintingFailure = false
-      })
-    },
-  },
 }
 </script>
 
@@ -121,6 +66,10 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  .spacer-large {
+    margin-top: 60px;
+  }
 
   .logo {
     margin-bottom: 3rem;

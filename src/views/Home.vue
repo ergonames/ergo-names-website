@@ -240,7 +240,7 @@ export default {
   head() {
     return {
       title: {
-        inner: 'Home',
+        inner: 'For Ergonauts',
       },
       meta: [
         {

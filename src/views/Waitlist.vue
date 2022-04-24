@@ -65,12 +65,12 @@ export default {
   head() {
     return {
       title: {
-        inner: 'Send to NFT owner',
+        inner: 'Waitlist',
       },
       meta: [
         {
           name: 'description',
-          content: `${this.appTitle} home page`,
+          content: `${this.appTitle} waitlist`,
           id: 'desc',
         },
       ],
