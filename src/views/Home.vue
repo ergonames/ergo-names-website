@@ -151,7 +151,7 @@
         </h2>
         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
           <div class="accordion-body">
-            Ergo Names development is actively ongoing. We intend to complete the development by end of May and do a beta testing in <b>June 2022</b>. Public launch would be done after successful beta testing. Launching an incomplete product would be detrimental towards the ecosystem and we don't want to take any shortcuts in the Testing phase.
+            Ergo Names development is actively ongoing. We intend to complete the development by end of May and do a beta testing in <b>September 2022</b>. Public launch would be done after successful beta testing. Launching an incomplete product would be detrimental towards the ecosystem and we don't want to take any shortcuts in the Testing phase.
           </div>
         </div>
       </div>
