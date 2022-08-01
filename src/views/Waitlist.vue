@@ -59,6 +59,7 @@ export default {
       registrationFailure: false,
       assetTransmissionSuccessful: false,
       assetTransmissionFailure: false,
+      endpoint: 'https://formspree.io/f/xpzbowqg',
     }
   },
   computed: mapState('app', ['appTitle']),
@@ -68,6 +69,23 @@ export default {
       // eslint-disable-next-line
       alert(JSON.stringify(this.form))
       // AJAX Call
+
+      // axios.post('https://formspree.io/f/xpzbowqg',{
+      //    email: this.form.emailAddress,          
+      // ).then((response) => {
+      //   alert(response.data); 
+      //    this.nameMsg = '';
+      //    this.emailMsg = '';
+      //    this.messageMsg = '';
+      //    this.loadingTxt = false;  
+      //    //i redirect my app to '/success' route once payload completed.  
+      //    this.$router.push({ path: '/success' });      
+      // }).catch((error) => {        
+      // if (error.response) {          
+      //     // eslint-disable-next-line no-alert
+      //     alert(error.response.data); // => the response payload
+      // }});
+      // const response = await this.$axios.post(this.endpoint, data)
       this.registrationSuccessful = true
       this.registrationFailure = false
     },
