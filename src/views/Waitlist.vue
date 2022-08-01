@@ -15,18 +15,27 @@
             class="form-control"
             required
           ></b-form-input>
-          
           <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputMessage" class="form-label">Message</label>
+          <b-form-input
+            id="input-2"
+            v-model="form.message"
+            placeholder="Enter your message (optional)"
+            type="text"
+            class="form-control"
+          ></b-form-input>
         </div>
 
         <br />
         <b-button type="submit" variant="primary" class="btn btn-primary">Join the waitlist</b-button>
       </b-form>
       <p v-if="registrationSuccessful">
-          {{form.emailAddress}} registration is successful.
+          {{form.emailAddress}} waitlist registration is successful.
       </p>
       <p v-if="registrationFailure">
-          Sorry, {{form.emailAddress}} registration is not successful.
+          Sorry, {{form.emailAddress}} waitlist registration is not successful.
       </p>
     </div>
   </div>
@@ -34,6 +43,7 @@
 
 <script>
 import { mapState } from 'vuex'
+import axios from "axios"
 
 export default {
   head() {
@@ -67,25 +77,14 @@ export default {
     submitWaitList(event) {
       event.preventDefault()
       // eslint-disable-next-line
-      alert(JSON.stringify(this.form))
+      // alert(JSON.stringify(this.form))
       // AJAX Call
+      const data = {
+        email: this.form.emailAddress,
+        message: this.form.message
+      }
+      axios.post(this.endpoint, data);
 
-      // axios.post('https://formspree.io/f/xpzbowqg',{
-      //    email: this.form.emailAddress,          
-      // ).then((response) => {
-      //   alert(response.data); 
-      //    this.nameMsg = '';
-      //    this.emailMsg = '';
-      //    this.messageMsg = '';
-      //    this.loadingTxt = false;  
-      //    //i redirect my app to '/success' route once payload completed.  
-      //    this.$router.push({ path: '/success' });      
-      // }).catch((error) => {        
-      // if (error.response) {          
-      //     // eslint-disable-next-line no-alert
-      //     alert(error.response.data); // => the response payload
-      // }});
-      // const response = await this.$axios.post(this.endpoint, data)
       this.registrationSuccessful = true
       this.registrationFailure = false
     },
