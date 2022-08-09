@@ -183,7 +183,7 @@
         </h2>
         <div id="collapseThree" class="accordion-collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
           <div class="accordion-body">
-            A one time payment would be required at the time of minting the Ergo Name NFT. Algorithm based pricing would be applied. The algorithm would take the length of the ergo name and the rarity of the ergo name into account to determine the price. In addition to the initial payment, a single digit percentage based royalty would be applied as per <a href="https://github.com/ergoplatform/eips/blob/master/eip-0006.md" role="button">EIP-006  </a> standard.
+            A one time payment would be required at the time of minting the Ergo Name NFT. Algorithm based pricing would be applied. The algorithm would take the length of the ergo name and the rarity of the ergo name into account to determine the price. In addition to the initial payment, a single digit percentage based royalty would be applied as per <a href="https://github.com/ergoplatform/eips/blob/master/eip-0024.md" role="button">EIP-0024  </a> standard.
           </div>
         </div>
       </div>
