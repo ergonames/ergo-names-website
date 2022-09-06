@@ -69,7 +69,7 @@ export default {
       registrationFailure: false,
       assetTransmissionSuccessful: false,
       assetTransmissionFailure: false,
-      endpoint: 'https://formspree.io/f/xpzbowqg',
+      endpoint: 'https://submit-form.com/O0wBckPZ',
     }
   },
   computed: mapState('app', ['appTitle']),
