@@ -7,8 +7,8 @@
 
 
     <div class="alert alert-primary" role="alert">
-      <a class="btn btn-outline-primary" href="https://youtu.be/ipSpMgB-Udk" role="button">
-      Ergo Names aka ErgoDNS is an award winning solution incubated in ErgoHack III  </a>
+      <a class="btn btn-outline-primary" href="https://www.youtube.com/watch?v=cb7es24QUbM" role="button">
+      Ergo Names is an award winning solution in ErgoHack V </a>
     </div>
 
     <h3 class="home-page-title spacer-large">What can you do by owning an Ergo Name?</h3>
@@ -151,7 +151,7 @@
         </h2>
         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
           <div class="accordion-body">
-            Ergo Names development is actively ongoing. We intend to complete the development by end of May and do a beta testing in <b>September 2022</b>. Public launch would be done after successful beta testing. Launching an incomplete product would be detrimental towards the ecosystem and we don't want to take any shortcuts in the Testing phase.
+            Ergo Names development is actively ongoing. We intend to complete the development by end of May and do a beta testing in <b>April 2023</b>. Public launch would be done after successful beta testing. Launching an incomplete product would be detrimental towards the ecosystem and we don't want to take any shortcuts in the Testing phase.
           </div>
         </div>
       </div>
@@ -222,7 +222,7 @@
       <a href="https://www.youtube.com/channel/UC8981bAV8t-YzxcwxZo3wrw" title="YouTube">
         <b-icon-youtube></b-icon-youtube>
       </a>
-      <a href="https://discord.gg/Jw6T3PQ6" title="Discord">
+      <a href="https://discord.gg/XfMMM4nXwR" title="Discord">
         <b-icon-discord></b-icon-discord>
       </a>
     </div>

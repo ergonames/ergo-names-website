@@ -25,7 +25,7 @@
           <div class="card-body">
             <h5 class="card-title">Discord</h5>
             <p class="card-text">Ergo Names team is available on discord to answer any open question or query from the community.</p>
-            <a href="https://discord.gg/Jw6T3PQ6" class="btn btn-primary">Link</a>
+            <a href="https://discord.gg/XfMMM4nXwR" class="btn btn-primary">Link</a>
           </div>
         </div>
       </div>
